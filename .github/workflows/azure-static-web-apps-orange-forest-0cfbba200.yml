@@ -33,6 +33,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env:
           is_static_export: true
+          # NEXT_PUBLIC_GRAPHQL_URI:${{ secrets.NEXT_PUBLIC_GRAPHQL_URI }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
